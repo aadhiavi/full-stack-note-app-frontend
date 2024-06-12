@@ -4,11 +4,13 @@ import './index.css'
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import Home from './Pages/Home/Home';
+import Welcome from './Pages/WelcomePage/Welcome';
 
 
 const routes = (
   <Router>
     <Routes>
+      <Route path='/' exact element={<Welcome />} />
       <Route path='/dashboard' exact element={<Home />} />
       <Route path='/login' exact element={<Login />} />
       <Route path='/signup' exact element={<SignUp />} />
