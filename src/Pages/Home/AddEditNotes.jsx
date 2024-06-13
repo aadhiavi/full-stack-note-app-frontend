@@ -101,6 +101,8 @@ const AddEditNotes = ({ noteData, type, getAllNotes, onClose, showToastMessage }
                     onChange={({ target }) => setTitle(target.value)}
                 />
             </div>
+
+
             <div className='flex flex-col gap-2 mt-4'>
                 <label htmlFor="" className='input-label'>CONTENT</label>
                 <textarea
